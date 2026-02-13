@@ -4,6 +4,6 @@
   "version": "0.0.1",
   "author": { "name": "Balancing Services" },
   "homepage": "https://balancing.services",
-  "repository": "https://github.com/Balancing-Services/balancing-services-for-claude",
+  "repository": "https://github.com/Balancing-Services/balancing-services-agent-plugins",
   "keywords": ["energy", "balancing", "electricity", "europe", "cli", "short-term power markets", "balancing markets"]
 }

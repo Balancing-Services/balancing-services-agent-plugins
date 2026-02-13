@@ -1,38 +1,28 @@
-# Balancing Services — Claude Code Plugin
+# Balancing Services — Agent Plugins
 
-A Claude Code plugin for querying European electricity balancing market data via the [Balancing Services API](https://agents.balancing.services/api/v1).
+An agent plugin marketplace for working with European electricity balancing market data.
 
-## Prerequisites
+## Plugins
 
-- [uv](https://docs.astral.sh/uv/) — Python package runner (for `uvx`)
+| Plugin | Description |
+|--------|-------------|
+| [balancing-services](./balancing-services/) | European electricity balancing market data and tools |
 
 ## Setup
 
-```bash
-claude --plugin-dir /path/to/balancing-services-for-claude
-```
-
-## Usage
-
-Once the plugin is loaded, Claude automatically activates the skill when you ask about balancing market data. The agent obtains a token via the MCP server and runs the CLI:
+### Claude Code
 
 ```
-bs-cli --token <TOKEN> <command> [options]
+/plugin marketplace add Balancing-Services/balancing-services-agent-plugins
 ```
 
-### Example prompts
+### Claude Co-work
 
-- "What were imbalance prices in Estonia yesterday?"
-- "Show me activated mFRR energy in Germany last week"
-- "Compare aFRR capacity prices between France and Netherlands for January 2025"
-- "Download energy bids for Finland as Parquet"
+Add the marketplace under **Settings > Plugins > Add marketplace** using `Balancing-Services/balancing-services-agent-plugins`.
 
-## What's Included
+---
 
-| File | Purpose |
-|------|---------|
-| `.claude-plugin/plugin.json` | Plugin manifest |
-| `skills/balancing-services-api/SKILL.md` | Core skill — domain knowledge, CLI reference, and tool permissions |
+Then install individual plugins — see each plugin's README for details.
 
 ## Links
 
